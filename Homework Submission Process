@@ -1,0 +1,144 @@
+Last login: Mon Nov 24 21:37:03 on ttys000
+Rebeccas-MBP:~ rebeccamills$ ls
+Desktop		Library		Pictures	my_feature.txt
+Documents	Movies		Public		sites
+Downloads	Music		Rebecca
+Rebeccas-MBP:~ rebeccamills$ cd sites
+Rebeccas-MBP:sites rebeccamills$ cd wdidc4-hw
+Rebeccas-MBP:wdidc4-hw rebeccamills$ git pull upstream master
+You have not concluded your merge (MERGE_HEAD exists).
+Please, commit your changes before you can merge.
+Rebeccas-MBP:wdidc4-hw rebeccamills$ git commit -m "Submitting homework.rb"
+[w01 49382ea] Submitting homework.rb
+Rebeccas-MBP:wdidc4-hw rebeccamills$ git pull upstream master
+From github.com:ga-students/wdidc4-hw
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+Rebeccas-MBP:wdidc4-hw rebeccamills$ git checkout -b w02
+fatal: A branch named 'w02' already exists.
+Rebeccas-MBP:wdidc4-hw rebeccamills$ git checkout w02
+Switched to branch 'w02'
+Rebeccas-MBP:wdidc4-hw rebeccamills$ git merge master
+Already up-to-date.
+Rebeccas-MBP:wdidc4-hw rebeccamills$ git add .
+Rebeccas-MBP:wdidc4-hw rebeccamills$ git commit -m "Completed w02 d01 homework"
+On branch w02
+nothing to commit, working directory clean
+Rebeccas-MBP:wdidc4-hw rebeccamills$ git push origin w02
+Everything up-to-date
+Rebeccas-MBP:wdidc4-hw rebeccamills$ git status
+On branch w02
+nothing to commit, working directory clean
+Rebeccas-MBP:wdidc4-hw rebeccamills$ git commit
+On branch w02
+nothing to commit, working directory clean
+Rebeccas-MBP:wdidc4-hw rebeccamills$ git master
+git: 'master' is not a git command. See 'git --help'.
+Rebeccas-MBP:wdidc4-hw rebeccamills$ master
+-bash: master: command not found
+Rebeccas-MBP:wdidc4-hw rebeccamills$ cd master
+-bash: cd: master: No such file or directory
+Rebeccas-MBP:wdidc4-hw rebeccamills$ git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=<remote>/<branch> w02
+
+Rebeccas-MBP:wdidc4-hw rebeccamills$ pull upstream master
+-bash: pull: command not found
+Rebeccas-MBP:wdidc4-hw rebeccamills$ ls
+assignments	students
+Rebeccas-MBP:wdidc4-hw rebeccamills$ cd students
+Rebeccas-MBP:students rebeccamills$ cd rebecca
+Rebeccas-MBP:rebecca rebeccamills$ ls
+w01	w03	w05	w07	w09	w11
+w02	w04	w06	w08	w10	w12
+Rebeccas-MBP:rebecca rebeccamills$ cd w02
+Rebeccas-MBP:w02 rebeccamills$ ls
+d01	d02	d03	d04	d05
+Rebeccas-MBP:w02 rebeccamills$ cd d01
+Rebeccas-MBP:d01 rebeccamills$ ls
+homework.rb
+Rebeccas-MBP:d01 rebeccamills$ pull upstream master rebeccamills
+-bash: pull: command not found
+Rebeccas-MBP:d01 rebeccamills$ cd ..
+Rebeccas-MBP:w02 rebeccamills$ ls
+d01	d02	d03	d04	d05
+Rebeccas-MBP:w02 rebeccamills$ cd ..
+Rebeccas-MBP:rebecca rebeccamills$ cd ..
+Rebeccas-MBP:students rebeccamills$ ls
+akintola	andy_k		emily		kurt		rebecca
+alex_b		andy_l		ian		matt_c		sherry
+alex_r		aurora		jack		matt_l		sunggyun
+alison_m	austin		james		min		trey
+alison_t	danny		kadar		mo		weston
+Rebeccas-MBP:students rebeccamills$ cd ..
+Rebeccas-MBP:wdidc4-hw rebeccamills$ ls
+assignments	students
+Rebeccas-MBP:wdidc4-hw rebeccamills$ cd ..
+Rebeccas-MBP:sites rebeccamills$ ls
+air_conditioning.rb		pyramid.rb
+conditionals.rb			searching_for_obi_wan.rb
+haiku				wdidc4
+location.rb			wdidc4-hw
+logic.rb
+Rebeccas-MBP:sites rebeccamills$ cd wdidc4-hw
+Rebeccas-MBP:wdidc4-hw rebeccamills$ pull upstream master
+-bash: pull: command not found
+Rebeccas-MBP:wdidc4-hw rebeccamills$ pull upsteam master rebeccamills
+-bash: pull: command not found
+Rebeccas-MBP:wdidc4-hw rebeccamills$ git merge master
+Already up-to-date.
+Rebeccas-MBP:wdidc4-hw rebeccamills$ git push origin w02
+Everything up-to-date
+Rebeccas-MBP:wdidc4-hw rebeccamills$ pull upstream
+-bash: pull: command not found
+Rebeccas-MBP:wdidc4-hw rebeccamills$ git checkout w02
+Already on 'w02'
+Rebeccas-MBP:wdidc4-hw rebeccamills$ git merge master
+Already up-to-date.
+Rebeccas-MBP:wdidc4-hw rebeccamills$ git add .
+Rebeccas-MBP:wdidc4-hw rebeccamills$ git commit -m "Completed w02 d01 homework"
+On branch w02
+nothing to commit, working directory clean
+Rebeccas-MBP:wdidc4-hw rebeccamills$  git push origin w02
+Everything up-to-date
+Rebeccas-MBP:wdidc4-hw rebeccamills$ ls
+assignments	students
+Rebeccas-MBP:wdidc4-hw rebeccamills$ cd students
+Rebeccas-MBP:students rebeccamills$ ls
+akintola	andy_k		emily		kurt		rebecca
+alex_b		andy_l		ian		matt_c		sherry
+alex_r		aurora		jack		matt_l		sunggyun
+alison_m	austin		james		min		trey
+alison_t	danny		kadar		mo		weston
+Rebeccas-MBP:students rebeccamills$ cd rebecca
+Rebeccas-MBP:rebecca rebeccamills$ ls
+w01	w03	w05	w07	w09	w11
+w02	w04	w06	w08	w10	w12
+Rebeccas-MBP:rebecca rebeccamills$ cd w02
+Rebeccas-MBP:w02 rebeccamills$ cd d01
+Rebeccas-MBP:d01 rebeccamills$ git branch
+  master
+  w01
+* w02
+Rebeccas-MBP:d01 rebeccamills$ git remote -v
+origin	git@github.com:rebeccamills/wdidc4-hw.git (fetch)
+origin	git@github.com:rebeccamills/wdidc4-hw.git (push)
+upstream	git@github.com:ga-students/wdidc4-hw.git (fetch)
+upstream	git@github.com:ga-students/wdidc4-hw.git (push)
+Rebeccas-MBP:d01 rebeccamills$ git remote
+origin
+upstream
+Rebeccas-MBP:d01 rebeccamills$ git add .
+Rebeccas-MBP:d01 rebeccamills$ git commit -m  "submit"
+On branch w02
+nothing to commit, working directory clean
+Rebeccas-MBP:d01 rebeccamills$ git push origin w02
+Everything up-to-date
+Rebeccas-MBP:d01 rebeccamills$ 
