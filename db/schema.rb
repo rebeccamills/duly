@@ -16,22 +16,22 @@ ActiveRecord::Schema.define(version: 20141215195317) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "count", force: true do |t|
-    t.string  "name",   null: false
-    t.integer "url_id"
+  create_table "links", force: true do |t|
+    t.string   "name",                   null: false
+    t.integer  "user_id"
+    t.integer  "count",      default: 0
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
-  create_table "share", force: true do |t|
-    t.string  "name",    null: false
-    t.integer "user_id"
-    t.integer "url_id"
+  create_table "users", force: true do |t|
+    t.string   "email"
+    t.string   "hashed_password"
+    t.string   "salt"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
-  create_table "url", force: true do |t|
-    t.string  "name",     null: false
-    t.integer "user_id"
-    t.integer "count_id"
-    t.integer "share_id"
-  end
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
 
 end
