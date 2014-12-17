@@ -3,6 +3,7 @@ require 'sinatra/activerecord'
 require 'pry'
 require 'sinatra/simple-authentication'
 require 'rack-flash'
+require 'bitly'
 
 require_relative './models/user'
 require_relative './models/link'
@@ -29,6 +30,35 @@ get '/' do
   login_required
   erb :index
 end
+
+get '/shorten' do
+  "Shorten your link"
+  display shorten_link.erb
+end
+
+get '/shorten' do
+  "Your shortened URL is"
+end
+
+get '/new' do 
+  erb :new_form
+end
+
+# post '/link' do
+#   @ = Link.new(title: params[:title], id: params[:id])
+#   puts on Submit shorten.rb
+#   return Bitly.client.shorten('http://www.google.com').inspect
+# end
+
+# get '/shorten.rb' do 
+#   Link.new(url: params[:url], id: params [:id])
+# end 
+#   puts on Submit
+#   return Bitly.client.shorten('http://www.google.com').inspect
+# end
+
+
+
 
 enable :sessions
 
