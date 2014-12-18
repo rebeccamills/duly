@@ -17,9 +17,8 @@ ActiveRecord::Schema.define(version: 20141215195317) do
   enable_extension "plpgsql"
 
   create_table "links", force: true do |t|
-    t.string   "name"
-    t.string   "long_url",               null: false
-    t.integer  "user_id",                null: false
+    t.string   "name",                   null: false
+    t.integer  "user_id"
     t.integer  "count",      default: 0
     t.datetime "created_at"
     t.datetime "updated_at"

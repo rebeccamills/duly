@@ -1,16 +1,15 @@
 <<<<<<< HEAD
 require 'sinatra'
-require 'sinatra/reloader'
 require 'sinatra/activerecord'
 require 'pry'
 require 'sinatra/simple-authentication'
 require 'rack-flash'
+require 'bitly'
 
 require_relative './models/user'
 require_relative './models/link'
-require_relative './config/environments'
+# require_relative './config/environments'
 
-enable :sessions
 
 Sinatra::SimpleAuthentication.configure do |c|
   c.use_password_confirmation = true
@@ -34,84 +33,16 @@ get '/' do
 end
 
 get '/shorten' do
-  login_required
   "Shorten your link"
   display shorten_link.erb
 end
 
-
-
-
-post '/submit' do
-  login_required
-  # saves it into the database
-  @link = Link.new(name: params[:name], long_url: params[:long_url], user_id: current_user.id)
-  if @link.save
-    erb :display_link
-  else
-    @errors = @link.errors.full_messages
-    redirect '/'
-  end
+get '/shorten' do
+  "Your shortened URL is"
 end
 
-get '/:unique_id' do
-   login_required
-  # redirects the user to the long URL
-  @unique_id = Link.find(params[:unique_id])
-  puts @unique_id.long_url
-  redirect "http://#{@unique_id.long_url}"
-end
-
-
-
-
-
-
-
-
-#From Bucket List exercise...setting up the index route
-# get '/' do
-#   @items = Item.all
-#   erb :index
-# end
-
-#setting up the form view
-# get '/new' do 
-#   erb :new_form
-# end
-
-#setting up the post route for our form
-# post '/new' do
-#   @item = Item.new(title: params[:title], desc: params[:desc])
-#   if @item.save
-#     redirect '/'
-#   else
-#     @errors = @item.errors.full_messages
-#     render '/new'
-# end
-
-
-
-
-
-# get '/shorten' do
-#   "Your shortened URL is"
-# end
-
-# get '/new' do 
-#   erb :new_form
-# end
-
-post '/shorten' do # when the form is submitted to '/shorten'
-  Bitly.use_api_version_3
-
-Bitly.configure do |config|
-  config.api_version = 3
-  config.access_token = "f7dfc495801a8bf466ee213ceb1bce1a403e328d"
-end
-
-puts Bitly.client.shorten('http://www.google.com').inspect
-
+get '/new' do 
+  erb :new_form
 end
 
 # post '/link' do
@@ -127,28 +58,10 @@ end
 #   return Bitly.client.shorten('http://www.google.com').inspect
 # end
 
-# def shorten(input, opts={})
-#   if input.is_a? String
-#     request = create_url("shorten", :longUrl => input, :history => (opts[:history] ? 1 : nil))
-#     result = get_result(request)
-#     result = {:long_url => input}.merge result[input]
-#     Bitly::Url.new(@login,@api_key,result)
-#   elsif input.is_a? Array
-#       request = create_url("shorten", :history => (opts[:history] ? 1 : nil))
-#       request.query << "&" + input.map { |long_url| "longUrl=#{CGI.escape(long_url)}" }.join("&") unless input.nil?
-#       result = get_result(request)
-#       input.map do |long_url|
-#         new_url = {:long_url => long_url}.merge result[long_url]
-#         long_url = Bitly::Url.new(@login,@api_key,new_url)
-#   end
-#     else
-#       raise ArgumentError.new("Shorten requires either a url or an array of urls")
-#     end
-#   end
 
 
 
-
+enable :sessions
 
 # binding.pry
 
@@ -192,6 +105,7 @@ end
 #     @errors = @item.errors.full_messages
 #     render '/new'
 #   end
+<<<<<<< HEAD
 # end
 =======
 require 'pg'
@@ -228,3 +142,6 @@ end
 
 binding.pry
 >>>>>>> ee04e67b06d7632b638bc24b990157043ede60e5
+=======
+# end
+>>>>>>> parent of 56b08ea... ready for deployment
