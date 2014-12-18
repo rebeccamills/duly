@@ -106,6 +106,7 @@ enable :sessions
 #     render '/new'
 #   end
 <<<<<<< HEAD
+<<<<<<< HEAD
 # end
 =======
 require 'pg'
@@ -142,6 +143,9 @@ end
 
 binding.pry
 >>>>>>> ee04e67b06d7632b638bc24b990157043ede60e5
+=======
+# end
+>>>>>>> parent of 56b08ea... ready for deployment
 =======
 # end
 >>>>>>> parent of 56b08ea... ready for deployment
