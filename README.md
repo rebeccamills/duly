@@ -2,7 +2,7 @@
 
 <h2>General Assembly WDI4, December 2014</h2>
 
-<h3>Overview</h3>
+<h4>Overview</h4>
 Duly is a simple URL shortener that takes a long link and converts it into a shorter URL.
 
 <h3>Technologies Used</h3>
