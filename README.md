@@ -32,6 +32,6 @@ Duly is a simple URL shortener that takes a long link and converts it into a sho
 To do:
 <ul>
 <li>Adding Share functions for social media</li>
-<li>Enabling users to save their shortened links</li>
-<li>Testing</li>
+<li>Adding a form field that allows users to share the shortened link by email</li>
+<li>Enabling users to save their shortened links into a list and delete them when they're no longer needed</li>
 </ul>
