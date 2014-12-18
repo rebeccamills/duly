@@ -1,0 +1,349 @@
+Last login: Wed Dec  3 16:14:55 on ttys000
+rebeccamills@Rebeccas-MBP tags_db $ git pull upstream master
+fatal: 'upstream' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+rebeccamills@Rebeccas-MBP tags_db $ git checkout master
+M	w03/d03/afternoon_associations/playlists_db/app.rb
+M	w03/d03/afternoon_associations/playlists_db/schema.sql
+M	w03/d03/afternoon_associations/tags_db/app.rb
+Already on 'master'
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+rebeccamills@Rebeccas-MBP tags_db $ git merge master
+Already up-to-date.
+rebeccamills@Rebeccas-MBP tags_db $ git commit -m "w03d03"
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+	modified:   ../playlists_db/app.rb
+	modified:   ../playlists_db/schema.sql
+	modified:   app.rb
+
+Untracked files:
+	tags.rb
+
+no changes added to commit
+rebeccamills@Rebeccas-MBP tags_db $ git add .
+rebeccamills@Rebeccas-MBP tags_db $ git commit -m "hw w03d03"
+[master 10535a7] hw w03d03
+ 2 files changed, 66 insertions(+)
+ create mode 100644 w03/d03/afternoon_associations/tags_db/tags.rb
+rebeccamills@Rebeccas-MBP tags_db $ git push origin master
+ERROR: Repository not found.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+rebeccamills@Rebeccas-MBP tags_db $ git push origin w03
+error: src refspec w03 does not match any.
+error: failed to push some refs to 'git@github.com:ga-students/wdidc4.git'
+rebeccamills@Rebeccas-MBP tags_db $ git status
+On branch master
+Your branch is ahead of 'origin/master' by 4 commits.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   ../playlists_db/app.rb
+	modified:   ../playlists_db/schema.sql
+
+no changes added to commit (use "git add" and/or "git commit -a")
+rebeccamills@Rebeccas-MBP tags_db $ git add .
+rebeccamills@Rebeccas-MBP tags_db $ git commit -m "hw w03d03"
+On branch master
+Your branch is ahead of 'origin/master' by 4 commits.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+	modified:   ../playlists_db/app.rb
+	modified:   ../playlists_db/schema.sql
+
+no changes added to commit
+rebeccamills@Rebeccas-MBP tags_db $ git pull upsteam master
+fatal: 'upsteam' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+rebeccamills@Rebeccas-MBP tags_db $ git checkout -b w03
+M	w03/d03/afternoon_associations/playlists_db/app.rb
+M	w03/d03/afternoon_associations/playlists_db/schema.sql
+Switched to a new branch 'w03'
+rebeccamills@Rebeccas-MBP tags_db $ git checkout w03
+M	w03/d03/afternoon_associations/playlists_db/app.rb
+M	w03/d03/afternoon_associations/playlists_db/schema.sql
+Already on 'w03'
+rebeccamills@Rebeccas-MBP tags_db $ git merge master
+Already up-to-date.
+rebeccamills@Rebeccas-MBP tags_db $ git add .
+rebeccamills@Rebeccas-MBP tags_db $ git commit -m "hw w03d03"
+On branch w03
+Changes not staged for commit:
+	modified:   ../playlists_db/app.rb
+	modified:   ../playlists_db/schema.sql
+
+no changes added to commit
+rebeccamills@Rebeccas-MBP tags_db $ git push origin w03
+ERROR: Repository not found.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+rebeccamills@Rebeccas-MBP tags_db $ git checkout w03
+M	w03/d03/afternoon_associations/playlists_db/app.rb
+M	w03/d03/afternoon_associations/playlists_db/schema.sql
+Already on 'w03'
+rebeccamills@Rebeccas-MBP tags_db $ git pull origin w03
+fatal: Couldn't find remote ref w03
+rebeccamills@Rebeccas-MBP tags_db $ git status
+On branch w03
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   ../playlists_db/app.rb
+	modified:   ../playlists_db/schema.sql
+
+no changes added to commit (use "git add" and/or "git commit -a")
+rebeccamills@Rebeccas-MBP tags_db $ git add app.rb
+rebeccamills@Rebeccas-MBP tags_db $ git pull origin w03
+fatal: Couldn't find remote ref w03
+rebeccamills@Rebeccas-MBP tags_db $ git status
+On branch w03
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   ../playlists_db/app.rb
+	modified:   ../playlists_db/schema.sql
+
+no changes added to commit (use "git add" and/or "git commit -a")
+rebeccamills@Rebeccas-MBP tags_db $ git add .
+rebeccamills@Rebeccas-MBP tags_db $ git commit "hw w03d03"
+error: pathspec 'hw w03d03' did not match any file(s) known to git.
+rebeccamills@Rebeccas-MBP tags_db $ git commit "hw w03d03"
+error: pathspec 'hw w03d03' did not match any file(s) known to git.
+rebeccamills@Rebeccas-MBP tags_db $ git add tags_db
+fatal: pathspec 'tags_db' did not match any files
+rebeccamills@Rebeccas-MBP tags_db $ ls
+app.rb		schema.sql	tags.md		tags.rb
+rebeccamills@Rebeccas-MBP tags_db $ cd ..
+rebeccamills@Rebeccas-MBP afternoon_associations $ ls
+playlists_db	tags_db
+rebeccamills@Rebeccas-MBP afternoon_associations $ git status
+On branch w03
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   playlists_db/app.rb
+	modified:   playlists_db/schema.sql
+
+no changes added to commit (use "git add" and/or "git commit -a")
+rebeccamills@Rebeccas-MBP afternoon_associations $ git add playlists_db/app.rb
+rebeccamills@Rebeccas-MBP afternoon_associations $ git status
+On branch w03
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   playlists_db/app.rb
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   playlists_db/schema.sql
+
+rebeccamills@Rebeccas-MBP afternoon_associations $ git add .
+rebeccamills@Rebeccas-MBP afternoon_associations $ git commit -m "hw w03d03"
+[w03 f1bee38] hw w03d03
+ 2 files changed, 9 insertions(+), 3 deletions(-)
+rebeccamills@Rebeccas-MBP afternoon_associations $ git push origin w03
+ERROR: Repository not found.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+rebeccamills@Rebeccas-MBP afternoon_associations $ ls
+playlists_db	tags_db
+rebeccamills@Rebeccas-MBP afternoon_associations $ cd ..
+rebeccamills@Rebeccas-MBP d03 $ ls
+afternoon_associations	morning_active_record	warmup
+rebeccamills@Rebeccas-MBP d03 $ git status
+On branch w03
+nothing to commit, working directory clean
+rebeccamills@Rebeccas-MBP d03 $ git add playlists_db/app.rb
+fatal: pathspec 'playlists_db/app.rb' did not match any files
+rebeccamills@Rebeccas-MBP d03 $ git status
+On branch w03
+nothing to commit, working directory clean
+rebeccamills@Rebeccas-MBP d03 $ git add app.rb
+fatal: pathspec 'app.rb' did not match any files
+rebeccamills@Rebeccas-MBP d03 $ git add tags.db
+fatal: pathspec 'tags.db' did not match any files
+rebeccamills@Rebeccas-MBP d03 $ git init
+Initialized empty Git repository in /Users/rebeccamills/Sites/wdidc4/w03/d03/.git/
+rebeccamills@Rebeccas-MBP d03 $ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	afternoon_associations/
+	morning_active_record/
+	warmup/
+
+nothing added to commit but untracked files present (use "git add" to track)
+rebeccamills@Rebeccas-MBP d03 $ git add afternoon_associations/
+rebeccamills@Rebeccas-MBP d03 $ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   afternoon_associations/.DS_Store
+	new file:   afternoon_associations/playlists_db/.DS_Store
+	new file:   afternoon_associations/playlists_db/app.rb
+	new file:   afternoon_associations/playlists_db/schema.sql
+	new file:   afternoon_associations/playlists_db/seed.rb
+	new file:   afternoon_associations/tags_db/.DS_Store
+	new file:   afternoon_associations/tags_db/app.rb
+	new file:   afternoon_associations/tags_db/schema.sql
+	new file:   afternoon_associations/tags_db/tags.md
+	new file:   afternoon_associations/tags_db/tags.rb
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	morning_active_record/
+	warmup/
+
+rebeccamills@Rebeccas-MBP d03 $ git add .
+rebeccamills@Rebeccas-MBP d03 $ git commit -m "hw w03d03"
+[master (root-commit) e3b6180] hw w03d03
+ 28 files changed, 1034 insertions(+)
+ create mode 100644 .DS_Store
+ create mode 100644 afternoon_associations/.DS_Store
+ create mode 100644 afternoon_associations/playlists_db/.DS_Store
+ create mode 100644 afternoon_associations/playlists_db/app.rb
+ create mode 100644 afternoon_associations/playlists_db/schema.sql
+ create mode 100644 afternoon_associations/playlists_db/seed.rb
+ create mode 100644 afternoon_associations/tags_db/.DS_Store
+ create mode 100644 afternoon_associations/tags_db/app.rb
+ create mode 100644 afternoon_associations/tags_db/schema.sql
+ create mode 100644 afternoon_associations/tags_db/tags.md
+ create mode 100644 afternoon_associations/tags_db/tags.rb
+ create mode 100644 morning_active_record/lunch-orders/main.rb
+ create mode 100644 morning_active_record/lunch-orders/readme.md
+ create mode 100644 morning_active_record/musicals/musical.rb
+ create mode 100644 morning_active_record/musicals/readme.md
+ create mode 100644 morning_active_record/musicals/schema.sql
+ create mode 100644 morning_active_record/musicals/seeds.rb
+ create mode 100644 morning_active_record/nba_stats/app.rb
+ create mode 100644 morning_active_record/nba_stats/data.csv
+ create mode 100644 morning_active_record/nba_stats/load_data.rb
+ create mode 100644 morning_active_record/nba_stats/players.sql
+ create mode 100644 warmup/.DS_Store
+ create mode 100644 warmup/calculator/lib/calc.rb
+ create mode 100644 warmup/calculator/readme.md
+ create mode 100644 warmup/calculator/spec/calc_spec.rb
+ create mode 100644 warmup/calculator/spec/spec_helper.rb
+ create mode 100644 warmup/shopping/readme.md
+ create mode 100644 warmup/shopping/receipts.sql
+rebeccamills@Rebeccas-MBP d03 $ git push origin w03
+error: src refspec w03 does not match any.
+error: failed to push some refs to 'origin'
+rebeccamills@Rebeccas-MBP d03 $ git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+rebeccamills@Rebeccas-MBP d03 $ git status
+On branch master
+nothing to commit, working directory clean
+rebeccamills@Rebeccas-MBP d03 $ ls
+afternoon_associations	morning_active_record	warmup
+rebeccamills@Rebeccas-MBP d03 $ cd ..
+rebeccamills@Rebeccas-MBP w03 $ cd ..
+rebeccamills@Rebeccas-MBP wdidc4 $ ls
+readme.md	ruby		w01		w03
+resources.md	student.rb	w02
+rebeccamills@Rebeccas-MBP wdidc4 $ cd ..
+rebeccamills@Rebeccas-MBP sites $ cd ..
+rebeccamills@Rebeccas-MBP ~ $ cd wdidc4-hw
+-bash: cd: wdidc4-hw: No such file or directory
+rebeccamills@Rebeccas-MBP ~ $ cd sites
+rebeccamills@Rebeccas-MBP sites $ cd wdidc4-hw
+rebeccamills@Rebeccas-MBP wdidc4-hw $ git status
+On branch w03
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   assignments/w03/d03/readme.md
+
+rebeccamills@Rebeccas-MBP wdidc4-hw $ cp ~/Desktop/app.rb ~/sites/wdidc4-hw/students/rebecca/w03/d03/
+rebeccamills@Rebeccas-MBP wdidc4-hw $ ls
+assignments	readme.md	students
+rebeccamills@Rebeccas-MBP wdidc4-hw $ cd students/rebecca/w03/d03
+rebeccamills@Rebeccas-MBP d03 $ ls
+app.rb	tags_db
+rebeccamills@Rebeccas-MBP d03 $ cd tags_db/
+rebeccamills@Rebeccas-MBP tags_db $ ls
+schema.sql	tags.md		tags.rb
+rebeccamills@Rebeccas-MBP tags_db $ cd ..
+rebeccamills@Rebeccas-MBP d03 $ cp app.rb ./tags_db/
+rebeccamills@Rebeccas-MBP d03 $ ls
+app.rb	tags_db
+rebeccamills@Rebeccas-MBP d03 $ cd tags_db/
+rebeccamills@Rebeccas-MBP tags_db $ ls
+app.rb		schema.sql	tags.md		tags.rb
+rebeccamills@Rebeccas-MBP tags_db $ git status
+On branch w03
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   ../../../../../assignments/w03/d03/readme.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	../app.rb
+
+rebeccamills@Rebeccas-MBP tags_db $ git add .
+rebeccamills@Rebeccas-MBP tags_db $ git status
+On branch w03
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   ../../../../../assignments/w03/d03/readme.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	../app.rb
+
+rebeccamills@Rebeccas-MBP tags_db $ git add app.rb
+rebeccamills@Rebeccas-MBP tags_db $ git status
+On branch w03
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   ../../../../../assignments/w03/d03/readme.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	../app.rb
+
+rebeccamills@Rebeccas-MBP tags_db $ 

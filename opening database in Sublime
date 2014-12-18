@@ -1,0 +1,42 @@
+Last login: Wed Dec  3 11:11:02 on ttys000
+rebeccamills@Rebeccas-MacBook-Pro ~ $ cd sites
+rebeccamills@Rebeccas-MacBook-Pro sites $ cd wdidc4
+rebeccamills@Rebeccas-MacBook-Pro wdidc4 $ git pull
+You have not concluded your merge (MERGE_HEAD exists).
+Please, commit your changes before you can merge.
+rebeccamills@Rebeccas-MacBook-Pro wdidc4 $ git commit -m "association"
+[master a26da0c] association
+rebeccamills@Rebeccas-MacBook-Pro wdidc4 $ git pull
+Already up-to-date.
+rebeccamills@Rebeccas-MacBook-Pro wdidc4 $ ls
+readme.md	ruby		w01		w03
+resources.md	student.rb	w02
+rebeccamills@Rebeccas-MacBook-Pro wdidc4 $ cd w03
+rebeccamills@Rebeccas-MacBook-Pro w03 $ cd d03
+rebeccamills@Rebeccas-MacBook-Pro d03 $ ls
+afternoon_associations	morning_active_record	warmup
+rebeccamills@Rebeccas-MacBook-Pro d03 $ cd afternoon_associations
+rebeccamills@Rebeccas-MacBook-Pro afternoon_associations $ ls
+playlists_db	tags_db
+rebeccamills@Rebeccas-MacBook-Pro afternoon_associations $ cd tags_db
+rebeccamills@Rebeccas-MacBook-Pro tags_db $ ls
+app.rb		schema.sql	tags.md
+rebeccamills@Rebeccas-MacBook-Pro tags_db $ cd ..
+rebeccamills@Rebeccas-MacBook-Pro afternoon_associations $ cd playlists.db
+-bash: cd: playlists.db: No such file or directory
+rebeccamills@Rebeccas-MacBook-Pro afternoon_associations $ ls
+playlists_db	tags_db
+rebeccamills@Rebeccas-MacBook-Pro afternoon_associations $ playlists.db
+-bash: playlists.db: command not found
+rebeccamills@Rebeccas-MacBook-Pro afternoon_associations $ createdb playlists.dbrebeccamills@Rebeccas-MacBook-Pro afternoon_associations $ ls
+playlists_db	tags_db
+rebeccamills@Rebeccas-MacBook-Pro afternoon_associations $ ruby schema.sql
+ruby: No such file or directory -- schema.sql (LoadError)
+rebeccamills@Rebeccas-MacBook-Pro afternoon_associations $ psql
+psql (9.3.5)
+Type "help" for help.
+
+rebeccamills=# exit
+rebeccamills-# \q
+rebeccamills@Rebeccas-MacBook-Pro afternoon_associations $ subl playlists_db
+rebeccamills@Rebeccas-MacBook-Pro afternoon_associations $ 
