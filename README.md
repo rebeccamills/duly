@@ -25,7 +25,7 @@ Duly is a simple URL shortener that takes a long link and converts it into a sho
 <a href="https://www.pivotaltracker.com/n/projects/1229904">Complete list of user stories.</a>
 
 <h2>ERD:</h2>
-[ERD](/Dulyerd.png)
+<a href="https://www.gliffy.com/go/html5/6785895?app=1b5094b0-6042-11e2-bcfd-0800200c9a66">ERD</a>
 
 
 
