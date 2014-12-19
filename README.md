@@ -8,7 +8,8 @@ Duly is a simple URL shortener that takes a long link and converts it into a sho
 <h4>Technologies Used</h4>
 <ul>
 <li>Ruby 2.1.2</li>
-<li>PostgreSQL Database</li>
+<li>Sinatra</li>
+<li>ActiveRecord</li>
 <li>User authentication with Sinatra Simple Authentication gem</li>
 <li>CSS</li>
 </ul>
