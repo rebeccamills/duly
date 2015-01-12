@@ -1,0 +1,8 @@
+<div>
+Posted by <%= @entry.author %> at <%= @entry.created_at %> <br>
+<%= image_tag @entry.photo_url %> <br>
+<%= @entry.caption %>
+</div>
+
+<%= link_to "Edit this photo", edit_entry_path %>
+<%= link_to "Delete this photo", entry_path, method: :delete %>

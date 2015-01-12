@@ -1,0 +1,8 @@
+<% @entries.each do |e| %>
+<div>
+	Published by <%= e.author %> at <%= e.created_at %> <br>
+	<%= image_tag e.photo_url %> <br>
+	<%= e.caption %> <br>
+	<%= link_to "View photo", entry_path(e) %> <br>
+</div>
+<% end %>
