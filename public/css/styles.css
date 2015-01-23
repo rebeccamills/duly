@@ -1,0 +1,44 @@
+body{
+  width:800px;
+  line-height:1.5;
+  margin:2em auto;
+  font-weight:300;
+  font-family:'Lato', sans-serif;
+}
+
+h1, h2, h3 {
+  font-weight:300;
+  display:inline-block;
+  padding-right:.5em;
+}
+
+header h1, a{
+  color:#DC0200;
+}
+
+header h2{
+  color:#858585;
+}
+
+header nav ul:after{ /* contain floated children */
+  content:'';
+  display:table;
+  clear:both;
+}
+
+header ul{
+  padding:0;
+  margin:0;
+}
+
+
+img{
+  max-width:100%;
+}
+
+
+.title{
+  font-size:1.5em;
+  margin:.25em 0 .5em 0;
+}
+
